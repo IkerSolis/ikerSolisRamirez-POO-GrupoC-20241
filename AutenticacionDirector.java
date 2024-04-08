@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class AutenticacionDirector {
-    private static final String CONTRASENA_DIRECTOR = "PERRYELORTITORICO";
+    private static final String CONTRASENA_DIRECTOR = "ZOOMORELIA";
 
     public static boolean autenticarDirector() {
         Scanner scanner = new Scanner(System.in);
