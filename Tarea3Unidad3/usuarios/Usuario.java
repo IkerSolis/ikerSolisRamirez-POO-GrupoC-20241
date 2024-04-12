@@ -1,6 +1,6 @@
 package usuarios;
 
-import utils.Rol;
+import usuarios.utils.Rol;
 
 public class Usuario {
 
@@ -10,13 +10,17 @@ public class Usuario {
     private int id;
     private String telefono;
     private Rol rol;
+    private String nombreUsuario;
+    private String contrasena;
 
-    public Usuario(String nombre, String apellido, String telefono, Rol rol) {
+    public Usuario(String nombre, String apellido, String telefono, Rol rol, String nombreUsuario, String contrasena) {
         this.id = CANTIDAD_USUARIOS;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.rol = rol;
+        this.nombreUsuario = nombreUsuario;
+        this.contrasena = contrasena;
         CANTIDAD_USUARIOS++;
     }
     @Override
@@ -65,6 +69,21 @@ public class Usuario {
         this.rol = rol;
     }
 
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
     //public String mostrarInfo() {
        // return String.format("Id: %d, Nombre completo: %s %s, telefono: %s, rol: %s", id, nombre, apellido, telefono, rol);
     //}

@@ -1,5 +1,5 @@
 import usuarios.Usuario;
-import utils.Rol;
+import usuarios.utils.Rol;
 
 import java.time.LocalDate;
 
@@ -8,8 +8,8 @@ public class Asistente extends Usuario {
     private String INE;
     private LocalDate fechaInicio;
 
-    public Asistente(String nombre, String apellido, String telefono) {
-        super(nombre, apellido, telefono, Rol.ASISTENTE);
+    public Asistente(String nombre, String apellido, String telefono, String nombreUsuario, String contrasena) {
+        super(nombre, apellido, telefono, Rol.ASISTENTE, nombreUsuario, contrasena);
         this.fechaInicio = LocalDate.now();
         this.INE = INE;
         this.sueldo = sueldo;
