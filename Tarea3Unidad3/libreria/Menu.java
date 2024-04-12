@@ -12,8 +12,8 @@ public class Menu {
 
     public void iniciarSesion() {
         boolean datosCorrectos = false;
+        System.out.println("Bienvenido al sistema de la biblioteca");
         do {
-            System.out.println("Bienvenido al sistema de la biblioteca");
             System.out.println("Para continuar inicia sesion");
 
             System.out.println("Ingresa tu usuario: ");
@@ -27,7 +27,7 @@ public class Menu {
                 datosCorrectos = true;
                 seleccionarMenu(usuarioActual);
             } else {
-                System.out.printf("Usuario o contrasena incorrectos. Intenta de nuevo.");
+                System.out.printf("Usuario o contrasena incorrectos. Intenta de nuevo.\n");
             }
 
         }while(!datosCorrectos);
@@ -43,13 +43,14 @@ public class Menu {
 
     private void mostrarMenuCliente() {
         Scanner scanner = new Scanner(System.in);
+        int opcion;
         System.out.println("Bienvenido al sistema del Cliente");
         do {
             System.out.println("Estas son las opciones: ");
             System.out.println("1. Ver lista de libros");
             System.out.println("2. Consultar las rentas");
             System.out.println("3. Cerrar sesion");
-            int opcion = scanner.nextInt();
+            opcion = scanner.nextInt();
 
             switch (opcion) {
 
@@ -63,26 +64,29 @@ public class Menu {
                     break;
                 case 3:
                     System.out.println("Elegiste la opcion 3");
-                    System.out.println("Cerrando sesion");
+                    System.out.println("Cerrando sesion...");
+                    this.iniciarSesion();
             }
-        }while(true);
+        }while(opcion != 3);
     }
 
     private void mostrarMenuAsistente() {
         Scanner scanner = new Scanner(System.in);
+        int opcion;
         System.out.println("Bienvenido al sistema del Asistente");
         do {
             System.out.println("Estas son las opciones: ");
             System.out.println("1. Agregar un libro");
-            System.out.println("2. Actualizar un libro");
-            System.out.println("3. Borrar un libro");
-            System.out.println("4. Ver libros rentaddos");
-            System.out.println("5. Agregar un cliente");
-            System.out.println("6. Actualizar cliente");
-            System.out.println("7. Borrar cliente");
-            System.out.println("8. Ver lista de clientes");
-            System.out.println("9. Cerrar sesion");
-            int opcion = scanner.nextInt();
+            System.out.println("2. Ver lista de libros");
+            System.out.println("3. Actualizar un libro");
+            System.out.println("4. Borrar un libro");
+            System.out.println("5. Ver libros rentaddos");
+            System.out.println("6. Agregar un cliente");
+            System.out.println("7. Actualizar cliente");
+            System.out.println("8. Borrar cliente");
+            System.out.println("9. Ver lista de clientes");
+            System.out.println("10. Cerrar sesion");
+            opcion = scanner.nextInt();
 
             switch (opcion) {
 
@@ -113,31 +117,37 @@ public class Menu {
                 case 9:
                     System.out.println("Elegiste la opcion 9");
                     break;
+                case 10:
+                    System.out.println("Elegiste la opcion 9");
+                    System.out.println("Cerrando sesion...");
+                    this.iniciarSesion();
+                    break;
             }
-        }while(true);
+        }while(opcion != 10);
     }
 
     private void mostrarMenuGerente() {
         Scanner scanner = new Scanner(System.in);
+        int opcion;
         System.out.println("Bienvenido al sistema del Gerente");
         do {
             System.out.println("Estas son las opciones: ");
             System.out.println("1. Agregar un libro");
-            System.out.println("2. Actualizar datos de un libro");
-            System.out.println("3. Borrar un libro");
-            System.out.println("4. Ver libros rentaddos");
-            System.out.println("5. Agregar un cliente");
-            System.out.println("6. Actualizar cliente");
-            System.out.println("7. Borrar cliente");
-            System.out.println("8. Ver lista de clientes");
-            System.out.println("9. Agregar asistente");
-            System.out.println("10. Actualizar asistente");
-            System.out.println("11. Eliminar asistente");
-            System.out.println("12. Ver lista de asistentes");
-            System.out.println("13. ");
-            System.out.println("14. ");
+            System.out.println("2. Ver lista de libros");
+            System.out.println("3. Actualizar datos de un libro");
+            System.out.println("4. Borrar un libro");
+            System.out.println("5. Rentar libro");
+            System.out.println("6. Ver libros rentaddos");
+            System.out.println("7. Agregar un cliente");
+            System.out.println("8. Actualizar cliente");
+            System.out.println("9. Borrar cliente");
+            System.out.println("10. Ver lista de clientes");
+            System.out.println("11. Agregar asistente");
+            System.out.println("12. Actualizar asistente");
+            System.out.println("13. Eliminar asistente");
+            System.out.println("14. Ver lista de asistentes");
             System.out.println("15. Cerrar sesion");
-            int opcion = scanner.nextInt();
+            opcion = scanner.nextInt();
 
             switch (opcion) {
 
@@ -168,7 +178,28 @@ public class Menu {
                 case 9:
                     System.out.println("Elegiste la opcion 9");
                     break;
+                case 10:
+                    System.out.println("Elegiste la opcion 5");
+                    break;
+                case 11:
+                    System.out.println("Elegiste la opcion 6");
+                    break;
+                case 12:
+                    System.out.println("Elegiste la opcion 7");
+                    break;
+                case 13:
+                    System.out.println("Elegiste la opcion 8");
+                    break;
+                case 14:
+                    System.out.println("Elegiste la opcion 9");
+                    break;
+                case 15:
+                    System.out.println("Elegiste la opcion 9");
+                    System.out.println("Cerrando sesion...");
+                    iniciarSesion();
+                    break;
             }
-        }while(true);
+        }while(opcion != 15);
     }
 }
+
