@@ -31,8 +31,8 @@ public class Sistema {
     private void mostrarMenuSistema()
     {
         int opcion = 0;
-        System.out.println("BIENVENIDO AL SISTEMA DE ");
-        do {;
+        System.out.println("BIENVENIDO A LOS ABARROTES DON DENZEL");
+        do {
             System.out.println("Estas son las opciones del sistema");
             System.out.println("1.- Registrar cliente");
             System.out.println("2.- Registrat producto");
