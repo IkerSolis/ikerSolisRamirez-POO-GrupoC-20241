@@ -11,8 +11,10 @@
 
 //Gerente - CRUD cpmpleto del sistema ademas de realizar rentas
 
+import libreria.Libreria;
 import libreria.Menu;
 import usuarios.Cliente;
+import usuarios.Usuario;
 
 public class Main {
     public static void main(String[] args) {
