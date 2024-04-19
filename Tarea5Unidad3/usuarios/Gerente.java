@@ -11,7 +11,7 @@ public class Gerente extends Usuario {
     private String INE;
     private LocalDate fechaInicio;
 
-    public Gerente(String nombre, String apellido, String telefono, String INE, double sueldo, String nombreUsuario, String contrasena) {
+    public Gerente(String nombre, String apellido, String telefono, double sueldo, String INE,  String nombreUsuario, String contrasena) {
         super(nombre, apellido, telefono, Rol.GERENTE, nombreUsuario, contrasena);
         this.sueldo = sueldo;
         this.INE = INE;

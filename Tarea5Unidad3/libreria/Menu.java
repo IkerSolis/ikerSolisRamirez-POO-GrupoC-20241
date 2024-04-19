@@ -129,7 +129,7 @@ public class Menu {
                     break;
                 case 7:
                     System.out.println("Elegiste la opcion 7");
-                    libreria.eliminarClientes();
+                    //libreria.eliminarClientes();
                     break;
                 case 8:
                     System.out.println("Elegiste la opcion 8");
@@ -228,15 +228,15 @@ public class Menu {
                     break;
                 case 13:
                     System.out.println("Elegiste la opcion 13");
-                    libreria.eliminarClientes();
+                    //libreria.eliminarClientes();
                     break;
                 case 14:
                     System.out.println("Elegiste la opcion 14");
-                    libreria.eliminarAsistentes();
+                    //libreria.eliminarAsistentes();
                     break;
                 case 15:
                     System.out.println("Elegiste la opcion 15");
-                    libreria.eliminarGerentes();
+                    //libreria.eliminarGerentes();
                     break;
                 case 16:
                     System.out.println("Elegiste la opcion 16");
