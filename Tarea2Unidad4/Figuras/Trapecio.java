@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Trapecio extends Shape {
+public class Trapecio implements ShapeInterfaz {
 
     double base1;
     double base2;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Rectangulo extends Shape {
+public class Rectangulo implements ShapeInterfaz{
     double lado1;
     double lado2;
     double area;
@@ -29,4 +29,5 @@ public class Rectangulo extends Shape {
         perimetro = lado1 + lado1 + lado2 + lado2;
         System.out.println(perimetro);
     }
+
 }

@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Cuadrado extends Shape {
-
+public class Cuadrado implements ShapeInterfaz {
     double lado;
     double area;
     double perimetro;
+
 
     @Override
     public void calcularArea() {

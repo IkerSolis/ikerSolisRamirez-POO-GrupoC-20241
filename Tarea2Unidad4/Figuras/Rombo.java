@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class Rombo extends Shape {
-
+public class Rombo implements ShapeInterfaz {
     double diagonal1;
     double diagonal2;
     double lados;
@@ -23,12 +22,10 @@ public class Rombo extends Shape {
     @Override
     public void calcularPerimetro() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa la diagonal mayor del rombo");
-        diagonal1 = scanner.nextDouble();
-        System.out.println("Ingresa la diagonal menor del rombo");
-        diagonal2 = scanner.nextDouble();
+        System.out.println("Ingresa el tamaño del lado del rombo");
+        lados = scanner.nextDouble();
 
-        perimetro = lados + lados + lados + lados;
+        perimetro = lados * 4;
         System.out.println(perimetro);
     }
 }
