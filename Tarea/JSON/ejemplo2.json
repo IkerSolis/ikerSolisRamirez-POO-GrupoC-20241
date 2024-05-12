@@ -1,0 +1,14 @@
+[
+    {
+      "nombre": "Iker",
+      "edad": 19,
+      "casado": false,
+      "hobbies": ["jugar", "comer", "musica"],
+    },
+    {
+        "nombre": "Cesás",
+        "edad": 20,
+        "casado": false,
+        "hobbies": ["bailar", "jugar", "ejercitar"],
+      }
+]
