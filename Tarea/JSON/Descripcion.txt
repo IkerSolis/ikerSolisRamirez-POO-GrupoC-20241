@@ -1,5 +1,0 @@
-Los archivos JSON son un tipo de archivo que usan la extension .json.
-Este tipo de archivos  representados en el formato JSON, que pueden
-incluir distintos tipos de datos como cadenas, numeros, objetos entre otros.
-Este tipo de archivos contiene una estructura de datos que se puede 
-utilizar en muchos lenguajes de programacion.
