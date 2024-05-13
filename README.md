@@ -37,9 +37,6 @@ Los inversionistas pueden registrar, modificar o eliminar sus cuentas. Cualquier
 
 Cada cliente puede tener una tarjeta de débito y hasta tres tarjetas de crédito, con diferentes límites de crédito según el tipo. Las solicitudes de tarjetas de crédito deben ser autorizadas por los ejecutivos de cuenta y el gerente. Los clientes pueden realizar depósitos y retiros con sus tarjetas.
 
-
-## Fin del Examen
-
 ## Integrantes
 
 - Carlos Emiliano Magaña Huipe
