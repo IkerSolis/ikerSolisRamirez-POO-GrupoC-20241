@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.examenunidad3banco.EjecutivosCuentaCRUDAcueducto">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="42.0" layoutY="270.0" prefHeight="700.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#cambiarGerenteAcueductoCRUD" prefWidth="70.0" text="Inicio" />
+                  <Label layoutX="80.0" layoutY="100.0" text="EJECUTIVOS">
+                     <font>
+                        <Font name="Montserrat Bold Italic" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="55.0" text="BANCO KAMARÓN">
+                     <font>
+                        <Font name="Montserrat Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="73.0" layoutY="89.0" prefWidth="200.0" style="{-fx-background-color: #000000};" />
+                  <GridPane layoutX="21.0" layoutY="153.0" prefHeight="392.0" prefWidth="302.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="txtEjecutivosCuentaNombre" GridPane.columnIndex="1" />
+                        <TextField fx:id="txtEjecutivosCuentaApellidos" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtEjecutivosCuentaCiudad" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtEjecutivosCuentaRFC" promptText="Autogenreado" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="txtEjecutivosCuentaCURP" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="txtEjecutivosCuentaDirección" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField fx:id="txtEjecutivosCuentaSalario" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label text="Nombre:" GridPane.halignment="RIGHT">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Apellidos:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Fecha de Nacimiento:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <DatePicker fx:id="datePickerEjecutivosCuentaFechaNacimiento" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Ciudad:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Estado:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <ComboBox fx:id="comboEjecutivosCuentaEstadosMX" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="RFC:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="CURP:" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Dirección:" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Fecha de Registro:" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <DatePicker fx:id="datePickerEjecutivosCuentaFechaRegistro" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label text="Salario:" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Rol:" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <ComboBox fx:id="comboEjecutivosCuentaRolesEmpleados" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label text="Fecha Inicio Trabajo:" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <DatePicker fx:id="datePickerEjecutivosCuentaFechaInicioTrabajo" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label text="Sucursal Perteneciente:" GridPane.halignment="RIGHT" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <ComboBox fx:id="comboEjecutivosCuentaSucursales" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <Label text="Contraseña:" GridPane.halignment="RIGHT" GridPane.rowIndex="13">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtEjecutivosCuentaContrasena" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="72.0" layoutY="569.0" prefHeight="76.0" prefWidth="200.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardarBoton" prefHeight="30.0" prefWidth="85.0" text="Guardar" />
+                        <Button fx:id="btnEliminar" disable="true" mnemonicParsing="false" onAction="#eliminarBoton" prefHeight="30.0" prefWidth="85.0" text="Eliminar" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="14.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="btnActualizar" disable="true" mnemonicParsing="false" onAction="#actualizarBoton" prefHeight="30.0" prefWidth="85.0" text="Acutalizar" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#limpiarBoton" prefHeight="30.0" prefWidth="85.0" text="Limpiar" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="14.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="listaEjecutivosCuentaEmpleados" layoutX="-62.0" layoutY="14.0" prefHeight="698.4" prefWidth="346.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.examenunidad3banco.TarjetasClientesCRUD">
+   <children>
+      <Label layoutX="302.0" layoutY="39.0" text="BANCO KAMARÓN">
+         <font>
+            <Font name="Montserrat Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="30.0" prefWidth="100.0" text="Cerrar Sesión" />
+      <Separator layoutX="300.0" layoutY="72.0" prefWidth="200.0" style="{-fx-background-color: #000000};" />
+      <Label layoutX="292.0" layoutY="80.0" text="TUS TARJETAS">
+         <font>
+            <Font name="Montserrat Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="165.0" fitWidth="246.0" layoutX="23.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/FrenteTarjeta.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="350.0" layoutY="400.0" prefHeight="120.0" prefWidth="100.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnDepositar" minHeight="30.0" mnemonicParsing="false" onAction="#depositar" prefWidth="85.0" text="Depositar" GridPane.halignment="CENTER" />
+            <Button fx:id="btnRetirar" minHeight="30.0" mnemonicParsing="false" onAction="#retirar" prefWidth="85.0" text="Retirar" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btnLimpiar" minHeight="30.0" mnemonicParsing="false" onAction="#limpiar" prefWidth="85.0" text="Limpiar" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label layoutX="49.0" layoutY="217.0" text="\$" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSaldoTD" layoutX="67.0" layoutY="210.0" prefHeight="38.0" prefWidth="177.0" promptText="Saldo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="33.0" layoutY="304.0" text="Depositar: $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDepositarSaldoTD" layoutX="134.0" layoutY="299.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="33.0" layoutY="346.0" text="Retirar:       $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRetirarSaldoTD" layoutX="134.0" layoutY="341.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="165.0" fitWidth="246.0" layoutX="522.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/FrenteTarjetaSimplicity.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="549.0" layoutY="217.0" text="\$" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSaldoTCS" layoutX="566.0" layoutY="213.0" prefHeight="38.0" prefWidth="177.0" promptText="Saldo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="532.0" layoutY="307.0" text="Depositar: $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDepositarSaldoTCS" layoutX="633.0" layoutY="302.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="532.0" layoutY="349.0" text="Retirar:       $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRetirarSaldoTCS" layoutX="633.0" layoutY="344.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="165.0" fitWidth="246.0" layoutX="28.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/FrenteTarjetaPlatino.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="54.0" layoutY="599.0" text="\$" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSaldoTCP" layoutX="72.0" layoutY="592.0" prefHeight="38.0" prefWidth="177.0" promptText="Saldo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="38.0" layoutY="686.0" text="Depositar: $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDepositarSaldoTCP" layoutX="139.0" layoutY="681.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="38.0" layoutY="728.0" text="Retirar:       $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRetirarSaldoTCP" layoutX="139.0" layoutY="723.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="165.0" fitWidth="246.0" layoutX="527.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/FrenteTarjetaOro.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="554.0" layoutY="599.0" text="\$" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSaldoTCO" layoutX="571.0" layoutY="595.0" prefHeight="38.0" prefWidth="177.0" promptText="Saldo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="537.0" layoutY="689.0" text="Depositar: $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDepositarSaldoTCO" layoutX="638.0" layoutY="684.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="537.0" layoutY="731.0" text="Retirar:       $">
+         <font>
+            <Font name="Montserrat Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRetirarSaldoTCO" layoutX="638.0" layoutY="726.0" prefHeight="30.0" prefWidth="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSolicitarSimplicity" layoutX="538.0" layoutY="129.0" mnemonicParsing="false" onAction="#solicitarSimplicity" prefWidth="70.0" text="Solicitar" />
+      <TextField fx:id="txtClienteNombreTD" layoutX="288.0" layoutY="155.0" prefHeight="30.0" prefWidth="224.0" promptText="Nombre Cliente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEstadoSimplicity" layoutX="612.0" layoutY="128.0" prefHeight="26.0" prefWidth="139.0" promptText="Estado" />
+      <Button fx:id="btnSolicitarPlatino" layoutX="44.0" layoutY="509.0" mnemonicParsing="false" onAction="#solicitarPlatino" prefWidth="70.0" text="Solicitar" />
+      <TextField fx:id="txtEstadoPlatino" layoutX="118.0" layoutY="508.0" prefHeight="26.0" prefWidth="139.0" promptText="Estado" />
+      <Button fx:id="btnSolicitarOro" layoutX="543.0" layoutY="511.0" mnemonicParsing="false" onAction="#solicitarOro" prefWidth="70.0" text="Solicitar" />
+      <TextField fx:id="txtEstadoOro" layoutX="617.0" layoutY="510.0" prefHeight="26.0" prefWidth="139.0" promptText="Estado" />
+   </children>
+</AnchorPane>
