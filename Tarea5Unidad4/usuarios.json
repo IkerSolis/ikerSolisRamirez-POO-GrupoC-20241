@@ -1,0 +1,48 @@
+{
+  "CLIENTE": [
+    {
+      "nombre": "Judas",
+      "apellido": "Marquez",
+      "id": 3,
+      "telefono": "45446546546",
+      "rol": "CLIENTE",
+      "nombreUsuario": "judas123",
+      "contrasena": "1234",
+      "fechaNacimiento": "2005/10/02"
+    },
+    {
+      "nombre": "Alvo",
+      "apellido": "Rosas",
+      "id": 4,
+      "telefono": "4654654654",
+      "rol": "CLIENTE",
+      "nombreUsuario": "gammerpity",
+      "contrasena": "1234",
+      "fechaNacimiento": "22/12/2003"
+    }
+  ],
+  "GERENTE": [
+    {
+      "nombre": "Iker",
+      "apellido": "Solis",
+      "id": 1,
+      "telefono": "2004/09/18",
+      "rol": "GERENTE",
+      "nombreUsuario": "ikr2004",
+      "contrasena": "1809",
+      "fechaNacimiento": "4434649844"
+    }
+  ],
+  "ASISTENTE": [
+    {
+      "nombre": "Juan",
+      "apellido": "Rivera",
+      "id": 2,
+      "telefono": "1998/12/05",
+      "rol": "ASISTENTE",
+      "nombreUsuario": "juan123",
+      "contrasena": "12345",
+      "fechaNacimiento": "4433210999"
+    }
+  ]
+}

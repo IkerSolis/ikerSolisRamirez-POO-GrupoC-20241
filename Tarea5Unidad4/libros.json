@@ -1,0 +1,40 @@
+{
+  "TERROR": [
+    {
+      "subgenero": "PSICOLOGICO",
+      "nombre": "Uzumaki",
+      "autor": "Junji Ito",
+      "editorial": "Big Comic Spirits",
+      "fechaPublicacion": "19-01-1998",
+      "precio": 120.0,
+      "id": 3,
+      "genero": "TERROR",
+      "stock": 4
+    }
+  ],
+  "COMEDIA": [
+    {
+      "nombre": "Divina Comedia",
+      "autor": "Dante Alighieri",
+      "editorial": "Nose",
+      "fechaPublicacion": "11-04-1472",
+      "precio": 500.0,
+      "id": 1,
+      "genero": "COMEDIA",
+      "stock": 5
+    }
+  ],
+  "ACCION": [
+    {
+      "clasificacion": "C",
+      "nombre": "Berserk Deluxe",
+      "autor": "Kentari Miura",
+      "editorial": "Panini",
+      "fechaPublicacion": "07-10-1997",
+      "precio": 1000.0,
+      "id": 2,
+      "genero": "ACCION",
+      "stock": 10
+    }
+  ]
+}
